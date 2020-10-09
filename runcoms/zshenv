@@ -10,4 +10,4 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 export GOPATH=~/workspace/go
-eval $(minikube docker-env)
+eval $(/usr/local/bin/minikube docker-env)
